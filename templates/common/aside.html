@@ -43,8 +43,9 @@
         <div class="panel-body">
             <ul class="list-inline">
                 {% for tag in tags %}
-                    <li><a href="" class="label {% cycle 'label-default' 'label-primary' 'label-success' 'label-info' 'label-warning' 'label-danger' %}">
-                        {{ tag.name }}</a></li>
+                <li>
+                    <a href="" class="label {% cycle 'label-default' 'label-primary' 'label-success' 'label-info' 'label-warning' 'label-danger' %}">{{ tag.name }}</a>
+                </li>
                 {% endfor %}
             </ul>
         </div>
